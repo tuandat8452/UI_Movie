@@ -1,0 +1,653 @@
+.owl-dots {
+  display: none;
+}
+
+.owl-theme .owl-prev:focus,
+.owl-theme .owl-next:focus {
+  outline: none !important;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: transparent;
+}
+
+.header .navbar .navbar-nav {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.header .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.25rem;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  box-shadow: 0 0 20px #fbbd61;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.header .nav-link:hover::after,
+.header .nav-link.active::after {
+  width: 100%;
+}
+
+.slider .carousel-caption {
+  left: 50%;
+  bottom: initial;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider .carousel-caption > span {
+  font-size: 0.875rem;
+  color: #fbbd61;
+}
+
+.slider .carousel-caption h1 {
+  font-size: 3.25rem;
+}
+
+.slider .carousel-caption p {
+  font-size: 1.125rem;
+}
+
+
+.slider .carousel-caption .trailer span {
+  border-width: 2px !important;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slider .carousel-caption .trailer .btn {
+  overflow: hidden;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  box-shadow: none;
+  border-radius: 9000px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 0.8rem 3rem 0.8rem 2rem;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.slider .trailer .btn::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, #ec7532, #ec7532);
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  transform: skewX(45deg);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+
+
+.slider .carousel-caption .trailer .btn:hover::after {
+  width: 200%;
+}
+
+.slider .carousel-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.new .container h1 {
+  font-size: 1.25rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e7e7e7;
+  color: #ec7532;
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.new .container h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: auto;
+  bottom: -1px;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  width: 8rem;
+  height: 5px;
+}
+
+.new .img {
+  border-radius: 0.75rem;
+  width: 100%;
+}
+
+.new .item .info {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleZ(0.8);
+}
+
+.new .img:hover .info {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleZ(1);
+  transition: all 0.4s;
+  z-index: 1;
+}
+
+.new .item .info i {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 2px solid !important;
+}
+
+.new .item .img::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, #fbbd61, #ec7532);
+  position: absolute;
+  top: 0;
+  left: -220px;
+  transform: skewX(45deg);
+  transition: all 0.4s;
+}
+
+.new .item .img:hover::after {
+  width: 300%;
+}
+
+.new .item h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.new .rating {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.new .rating i {
+  padding: 0.2rem;
+  font-size: 0.7rem;
+  color: #fbbd61;
+}
+
+.new .rating .star-color {
+  color: #d8d8d8;
+}
+
+.new .owl-prev {
+  position: absolute;
+  top: 25%;
+  left: -5%;
+}
+
+.new .owl-next {
+  position: absolute;
+  top: 25%;
+  right: -5%;
+}
+
+.new .owl-prev:hover,
+.new .owl-next:hover {
+  opacity: 0.5;
+  background: none !important;
+  color: #ec7532 !important;
+}
+
+
+
+.schedule {
+  padding: 4rem 0;
+}
+
+.schedule .nav {
+  border: none;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.schedule .nav-item {
+  position: relative;
+}
+
+.schedule .nav a {
+  border: none;
+  color: #6a6a6a;
+}
+
+.schedule .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.25rem;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  box-shadow: 0 0 20px #fbbd61;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.schedule .nav-link:hover::after,
+.schedule .nav-link.active::after {
+  width: 100%;
+}
+
+.schedule .nav-item .active {
+  color: #ec7532;
+  text-decoration: underline;
+}
+
+.schedule .nav .nav-link {
+  padding: 0.5rem 1.2rem;
+}
+
+.schedule .nav-item a:hover {
+  text-decoration: none;
+}
+
+.schedule .item {
+  margin: 2rem 0;
+}
+
+.schedule .tab-pane img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.schedule .info {
+  margin-top: 2rem;
+}
+
+.schedule .tab-pane .info > span {
+  color: #ec7532;
+}
+
+.schedule .tab-pane .info h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.schedule .tab-pane .info p {
+  color: #818181;
+}
+
+.schedule .tab-pane .info a {
+  text-decoration: none;
+  color: #ec7532;
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+}
+
+.schedule .tab-pane .info .viewing {
+  color: #818181;
+  margin-top: 1rem;
+}
+
+.schedule .tab-pane .viewing .time p {
+  display: inline;
+  /* padding: 0 0.5rem; */
+  font-size: 0.7rem;
+  color: #687178;
+}
+
+.schedule .tab-pane .viewing .time span {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-right: 0.2rem;
+  letter-spacing: 1px;
+}
+
+.schedule .viewing .timing {
+  background-color: #d8d8d8;
+  color: #777777;
+}
+
+.schedule .viewing .time-past {
+  color: #c4c4c4;
+  background-color: #ececec;
+}
+
+.schedule .min {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.schedule .min span {
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+  color: #949b9a;
+}
+
+.schedule .min span:last-child {
+  width: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff !important;
+  background-color: #4a4a4a;
+  font-weight: 600;
+}
+
+.schedule .tab-pane a:hover {
+  color: #000;
+}
+
+.coming {
+  padding: 4rem 0 1rem 0;
+  background-image: url(../images/slide-3.png);
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(14, 20, 19, 1);
+}
+
+.coming .video img {
+  width: 100%;
+}
+
+.coming .col-md-6 {
+  padding: 0;
+}
+
+.coming .container > h1 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  position: relative;
+  font-size: 1.25rem;
+  color: #fff;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.coming .container > h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: auto;
+  bottom: -1px;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  width: 9rem;
+  height: 5px;
+}
+
+.coming .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coming .content span:first-child {
+  color: #ec7532;
+}
+
+.coming .content h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.coming .date i {
+  font-size: 0.7rem;
+}
+
+.coming .content .date {
+  display: flex;
+}
+
+.coming .content .raiting i {
+  color: #fbbd61;
+}
+
+.coming .content .calender {
+  color: #bebebe;
+  margin-left: 1rem;
+}
+
+.coming .content p {
+  color: #fff;
+  padding: 1rem 4rem 1rem 0;
+}
+
+.coming .content .link a {
+  text-decoration: none;
+  color: #ec7532;
+}
+
+.coming .link a:hover {
+  color: #fbbd61;
+}
+
+.coming .video .icon {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.coming .video {
+  padding: 2rem 0 1rem 0;
+}
+
+.coming .icon i {
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 1.2rem;
+  border: 2px solid #ec7532;
+  transition: all 0.4s;
+}
+
+.coming .icon i:hover {
+  transform: scale(0.9);
+}
+
+.coming .row {
+  margin: 0;
+}
+
+.carousel-6 {
+  padding: 2rem 0;
+  background-color: #101010;
+  position: relative;
+}
+
+.carousel-6 .item .intro {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.carousel-6 .intro span {
+  color: #fff;
+}
+
+.carousel-6 .intro p {
+  color: #6f6f6f;
+}
+
+.carousel-6 img {
+  border-radius: 0.8rem;
+  width: 100%;
+}
+
+.carousel-6 .item {
+  opacity: 0.4;
+}
+
+.carousel-6 .item:hover {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.carousel-6 .active {
+  opacity: 1;
+}
+
+.owl-nav {
+  font-size: 3rem;
+  color: #ec7532;
+}
+
+.carousel-6 .owl-prev:hover {
+  opacity: 0.5;
+  background: none !important;
+}
+
+.carousel-6 .owl-next:hover {
+  opacity: 0.5;
+  background: none !important;
+}
+
+.carousel-6 .owl-nav .owl-prev {
+  position: absolute;
+  top: 25%;
+  left: -5%;
+}
+
+.carousel-6 .owl-nav .owl-next {
+  position: absolute;
+  top: 25%;
+  right: -5%;
+}
+
+.contact {
+  padding: 3rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.contact h1 {
+  color: #ec7532;
+}
+
+.footer {
+  background-color: #101010;
+  padding: 4rem 0 1rem 0e;
+}
+
+.footer h3 {
+  font-size: 1rem;
+  color: #ec7532;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  line-height: 1.5rem;
+}
+
+.footer i {
+  width: 1.5rem;
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  color: #fbbd61;
+}
+
+.footer .row {
+  border-bottom: 1px solid #212121;
+}
+
+.footer a:last-child {
+  display: inline;
+}
+
+.footer span {
+  display: block;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 992px) {
+  .schedule .item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+  .schedule .nav .nav-item {
+    display: block ;
+    width: 100%;
+  }
+
+  .schedule .nav-item .nav-link::after {
+  content: "";
+  display: block;
+  width: 0.25rem;
+  height: 0;
+  background: linear-gradient(to bottom, #fbbd61, #ec7532);
+  box-shadow: 0 0 20px #fbbd61;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: all 0.5s;
+  }
+
+  .schedule .nav-item .nav-link:hover::after,
+  .schedule .nav-link.active::after {
+    height: 100%;
+  }
+
+  .schedule .nav {
+    flex-wrap: wrap;
+  }
+  .schedule .min {
+    margin-top: 1rem;
+  }
+}
